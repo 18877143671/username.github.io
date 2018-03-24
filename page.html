@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>安利几个学习前端的好工具 - 保罗的小宇宙</title>
+        <link href="Css/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="icon" href="https://paugram.com/usr/themes/single/img/icon/32.png" sizes="32x32"/>
+    <link rel="icon" href="https://paugram.com/usr/themes/single/img/icon/192.png" sizes="192x192"/>
+    <link href="Css/single.css" rel="stylesheet" type="text/css"/>
+    <link href="Css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <!--<link href="Css/font-awesome.min.css" rel="stylesheet" type="text/css"/>-->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1"/>
+    <style>body:before{content:''; display:block;  opacity:.06; z-index:-1; position:fixed; top:0; bottom:0; left:0; right:0; background: url(Images/152d5ba1fd3445fa8eeceb3c96f666b8.gif) center/cover no-repeat;}</style>
+    <meta property="og:site_name" content="保罗的小宇宙">
+    <meta property="og:title" content=" &raquo; 安利几个学习前端的好工具"/>
+<style>#pio{ left: 0; bottom: 0; z-index: 520; position: fixed; pointer-events: none; } @media screen and (max-width: 768px){ #pio{ width: 8em; } }</style><meta name="description" content="这里列出的都是本人所熟悉的工具，本文将不定期持续更新，我每找到好的都可以在这里贴出来。学习类MDN：一个由火狐提供的开发者学习平台，全称 “Mozilla Developer Network”，..." />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://paugram.com/feed/coding/frontend-tools.html" />
+<link rel="alternate" type="application/rdf+xml" title="RSS 1.0" href="https://paugram.com/feed/rss/coding/frontend-tools.html" />
+<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="https://paugram.com/feed/atom/coding/frontend-tools.html" />
+<script type="text/javascript">
+(function () {
+    window.TypechoComment = {
+        dom : function (id) {
+            return document.getElementById(id);
+        },
+    
+        create : function (tag, attr) {
+            var el = document.createElement(tag);
+        
+            for (var key in attr) {
+                el.setAttribute(key, attr[key]);
+            }
+        
+            return el;
+        },
+
+        reply : function (cid, coid) {
+            var comment = this.dom(cid), parent = comment.parentNode,
+                response = this.dom('respond-post-76'), input = this.dom('comment-parent'),
+                form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                textarea = response.getElementsByTagName('textarea')[0];
+
+            if (null == input) {
+                input = this.create('input', {
+                    'type' : 'hidden',
+                    'name' : 'parent',
+                    'id'   : 'comment-parent'
+                });
+
+                form.appendChild(input);
+            }
+
+            input.setAttribute('value', coid);
+
+            if (null == this.dom('comment-form-place-holder')) {
+                var holder = this.create('div', {
+                    'id' : 'comment-form-place-holder'
+                });
+
+                response.parentNode.insertBefore(holder, response);
+            }
+
+            comment.appendChild(response);
+            this.dom('cancel-comment-reply-link').style.display = '';
+
+            if (null != textarea && 'text' == textarea.name) {
+                textarea.focus();
+            }
+
+            return false;
+        },
+
+        cancelReply : function () {
+            var response = this.dom('respond-post-76'),
+            holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+
+            if (null != input) {
+                input.parentNode.removeChild(input);
+            }
+
+            if (null == holder) {
+                return true;
+            }
+
+            this.dom('cancel-comment-reply-link').style.display = 'none';
+            holder.parentNode.insertBefore(response, holder);
+            return false;
+        }
+    };
+})();
+</script>
+<script type="text/javascript">
+(function () {
+    var event = document.addEventListener ? {
+        add: 'addEventListener',
+        focus: 'focus',
+        load: 'DOMContentLoaded'
+    } : {
+        add: 'attachEvent',
+        focus: 'onfocus',
+        load: 'onload'
+    };
+
+    document[event.add](event.load, function () {
+        var r = document.getElementById('respond-post-76');
+
+        if (null != r) {
+            var forms = r.getElementsByTagName('form');
+            if (forms.length > 0) {
+                var f = forms[0], textarea = f.getElementsByTagName('textarea')[0], added = false;
+
+                if (null != textarea && 'text' == textarea.name) {
+                    textarea[event.add](event.focus, function () {
+                        if (!added) {
+                            var input = document.createElement('input');
+                            input.type = 'hidden';
+                            input.name = '_';
+                            input.value = (function () {
+    var _9eKe31 = //'E7M'
+'E7M'+'47'//'V'
++''///*'cmJ'*/'cmJ'
++'40'//'G'
++'21d'//'0'
++'ef9'//'V'
++'3b'//'oQ'
++//'pON'
+'573'+//'0'
+'dc3'+/* 'xfh'//'xfh' */''+'6'//'e'
++/* 'pgM'//'pgM' */''+//'1p'
+'2'+//'9m'
+'1'+//'8'
+'df'+//'3'
+'0'+//'l'
+'l'+//'IgF'
+'b9c'+'38'//'qC'
++//'Y'
+'a'+'zx'//'zx'
++'0f'//'u'
+, _gmEp = [[0,3],[24,25],[30,32]];
+    
+    for (var i = 0; i < _gmEp.length; i ++) {
+        _9eKe31 = _9eKe31.substring(0, _gmEp[i][0]) + _9eKe31.substring(_gmEp[i][1]);
+    }
+
+    return _9eKe31;
+})();
+
+                            f.appendChild(input);
+                            added = true;
+                        }
+                    });
+                }
+            }
+        }
+    });
+})();
+</script></head>
+<body>
+<header>
+    <div class="head-title">
+        <h4>保罗的小宇宙</h4>
+    </div>
+    <div class="toggle-btn"></div>
+    <div class="light-btn"></div>
+    <div class="search-btn"></div>
+    <form class="search-form" method="post" action="">
+        <input type="text" name="s" placeholder="搜索什么？">
+    </form>
+    <ul class="head-menu">
+        <li><a href="https://paugram.com/">首页</a></li>
+        <li class="has-child">
+            <a>分类</a>
+            <ul class="sub-menu">
+                <li><a href="https://paugram.com/essay">随笔与杂谈</a></li><li><a href="https://paugram.com/tech">做个技术宅</a></li><li><a href="https://paugram.com/coding">进击的码农</a></li><li><a href="https://paugram.com/design">设计新视界</a></li><li><a href="https://paugram.com/share">有趣的分享</a></li>            </ul>
+        </li>
+        <li><a href="https://paugram.com/about.html">关于我</a></li><li><a href="https://paugram.com/friends.html">朋友们</a></li>    </ul>
+</header> 
+<main>
+    <div class="wrap min">
+        <section class="post-title">
+            <h2>安利几个学习前端的好工具</h2>
+            <div class="post-meta">
+                <time class="date">2017.09.25</time>
+                <span class="category"><a href="https://paugram.com/coding">进击的码农</a>，<a href="https://paugram.com/share">有趣的分享</a></span>
+                <span class="comments">5 °C</span>
+            </div>
+        </section>
+        <article class="post-content">
+            <p>这里列出的都是本人所熟悉的工具，本文将不定期持续更新，我每找到好的都可以在这里贴出来。</p>
+<h1>学习类</h1>
+<p><strong><a href="https://developer.mozilla.org/zh-CN/docs/Learn">MDN</a>：</strong><br />
+一个由火狐提供的开发者学习平台，全称 “Mozilla Developer Network”，拥有较全的教程，但部分较新标准只有英文文档。</p>
+<p><strong><a href="http://www.w3school.com.cn/">W3School</a>：</strong><br />
+国内较为知名的在线教程平台，提供前端和后端多个语言的教程，但教程使用的方法和标准可能相对老旧。</p>
+<h1>测试类</h1>
+<p><strong><a href="https://caniuse.com">CanIUse</a>：</strong><br />
+一个提供查询 CSS 属性、JS 方法兼容性的网站。想尽可能兼容老旧浏览器的必备之选。</p>
+<p><strong><a href="https://jsfiddle.net">JSFiddle</a>：</strong><br />
+一个在线编辑 HTML+CSS+JS 的平台，不需要注册就可以保存你写的代码（注意地址一旦忘记就找不到了）</p>
+<p><strong><a href="https://developers.google.com/speed/pagespeed/insights/">Google PageSpeed</a>：</strong><br />
+一个谷歌提供的测试工具，可以提供网页加载性能的优化建议。</p>
+<p><strong><a href="https://css-tricks.com">CSS Tricks</a>：</strong><br />
+一个提供前端开发优化教程的网站，不过是英文。</p>
+<p><strong><a href="http://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css">Webkit 浏览器内置 CSS</a>：</strong><br />
+想要制作新效果和更好的重置浏览器样式？快来参考一下 Webkit 内置的样式表吧。</p>
+<h1>框架类</h1>
+<p><strong><a href="https://kico.binkic.com/style">Kico Style</a>：</strong><br />
+我制作的 CSS 框架，提供的样式较为简单，方便新手学习架构和布局。还提供了较常用的交互组件，方便调用。</p>
+<p><strong><a href="https://getbootstrap.com/">Bootstrap</a>：</strong><br />
+恐怕是世界上最多人用的 CSS 框架了，提供各种各样的布局方案，你甚至可以不写 CSS 就可以完成一个前端网页的制作。</p>
+<p><strong><a href="https://jquery.com">JQuery</a></strong><br />
+当下最为主流的 JS 库，基于 JQ 开发的插件更是齐全。有自己的语法</p>
+<p><strong><a href="https://cn.vuejs.org">Vue.JS</a>：</strong><br />
+挺简单易用的 JS 框架，我还在学习使用中。</p>
+<h1>软件类</h1>
+<p><strong><a href="https://notepad-plus-plus.org">Notepad++</a></strong><br />
+简洁快速的运行在 Windows 平台的编辑器，支持多种编程语言。</p>
+<p><strong><a href="http://yui.github.io/yuicompressor">YUI Compressor</a></strong><br />
+提供 JS、CSS 代码压缩的一款工具。</p>
+<p><strong><a href="https://www.jetbrains.com/webstorm">WebStorm</a></strong><br />
+来自 JetBrains 的高度集成化 IDE，同时还支持一些 JS 框架的自动补全，并可以构建 node.JS 应用。但要收费</p>
+<p><strong><a href="https://www.sublimetext.com">Sublime Text</a></strong><br />
+据说比较精简，本人没用过，是大佬推荐的。但要收费</p>
+<p><strong><a href="https://code.visualstudio.com/">VS Code</a></strong><br />
+来自微软的免费代码编辑器，支持多种语言的编辑和补全，还可以自己安装扩展插件来获得更多的功能。唯一不理解的是它界面竟然是基于 HTML 构建的？</p>
+<blockquote>
+<p>也欢迎你在这里推荐更多实用的工具，以便让更多的人知道其魅力。</p>
+</blockquote>
+        </article>
+        <ul class="post-near">
+            <li>上一篇: <a href="https://paugram.com/essay/chongcai.html" title="崇才，一家有趣的公司">崇才，一家有趣的公司</a></li>
+            <li>下一篇: <a href="https://paugram.com/essay/single-dog.html" title="行单身路（伪诗句）">行单身路（伪诗句）</a></li>
+        </ul>
+        <section class="post-author">
+            <figure>
+                <img src="Picture/138b128128df4d139bc2b360def5a494.gif" alt="Paul" width="200" height="200" />            </figure>
+            <div>
+                <h4>Paul</h4>
+                <p>来自缤奇的前端狗一只。本站未注明转载的文章均为原创，并采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a> 授权协议，转载请注明来源，谢谢！如本站内容对你有所帮助的话，不妨 <a href="https://paugram.com/about.html#donate">捐助支持</a> 一下？</p>
+            </div>
+        </section>
+        <section id="comments" class="post-comments">
+    <h3>已有 5 条评论</h3>
+        <div id="respond-post-76" class="respond">
+        <span class="cancel-comment-reply">
+            <a id="cancel-comment-reply-link" href="https://paugram.com/coding/frontend-tools.html#respond-post-76" rel="nofollow" style="display:none" onclick="return TypechoComment.cancelReply();">取消回复</a>        </span>
+        <form class="bk-form" method="post" action="https://paugram.com/coding/frontend-tools.html/comment" id="comment-form" role="form">
+            <div class="row">
+                <fieldset class="col-m-6">
+                    <input type="text" name="author" id="author" placeholder="昵称 *：" value="" required="">
+                    <input type="email" name="mail" id="mail" placeholder="电邮 *：" value="" required>
+                    <input type="url" name="url" id="url" placeholder="http://" value="">
+                </fieldset>
+                <fieldset class="col-m-6">
+                    <textarea rows="3" name="text" id="textarea" placeholder="快来评论吧 (*≧ω≦)ﾉ" required=""></textarea>
+                    <button type="submit" class="btn small">写好了~</button>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+            <ol class="comment-list">
+    <li id="comment-191">
+        <img class="avatar" src="Picture/fcf1d9a3dedd4166a5d9abe638efc482.gif" alt="戴兜" width="150" height="150" />        <div class="comment-meta">
+            <span class="comment-author"><a href="https://daidr.me" rel="external nofollow">戴兜</a></span>
+            <time class="comment-time">18.03.02</time>
+            <span class="comment-reply"><a href="https://paugram.com/coding/frontend-tools.html/comment-page-1?replyTo=191#respond-post-76" rel="nofollow" onclick="return TypechoComment.reply('comment-191', 191);">回复</a></span>
+        </div>
+        <div class="comment-content">
+            <p>一直用的vscode，贼鸡儿顺手。<br>
+<br>
+顺带一提，vsc的界面使用electron(https://electronjs.org)构架，编写跨平台程序是极好的。尤其是对于前端苟来说233</p>        </div>
+        <div class="comment-children">
+            <ol class="comment-list">
+    <li id="comment-192">
+        <img class="avatar" src="Picture/4241ff7d8d0a403287912baacbffaf9c.gif" alt="Paul" width="150" height="150" />        <div class="comment-meta">
+            <span class="comment-author"><a href="https://paugram.com" rel="external nofollow">Paul</a></span>
+            <time class="comment-time">18.03.02</time>
+            <span class="comment-reply"><a href="https://paugram.com/coding/frontend-tools.html/comment-page-1?replyTo=192#respond-post-76" rel="nofollow" onclick="return TypechoComment.reply('comment-192', 192);">回复</a></span>
+        </div>
+        <div class="comment-content">
+            <p>Interesting，我去了解一下</p>        </div>
+    </li>
+</ol>        </div>
+    </li>
+
+    <li id="comment-130">
+        <img class="avatar" src="Picture/405f526d2ee8457baffd9bce851a84c7.gif" alt=""/>        <div class="comment-meta">
+            <span class="comment-author"><a href="https://cherryml.com" rel="external nofollow">柠檬酸</a></span>
+            <time class="comment-time">17.12.20</time>
+            <span class="comment-reply"><a href="https://paugram.com/coding/frontend-tools.html/comment-page-1?replyTo=130#respond-post-76" rel="nofollow" onclick="return TypechoComment.reply('comment-130', 130);">回复</a></span>
+        </div>
+        <div class="comment-content">
+            <p>Sublime 是真的好用呀，爱不释手~</p>        </div>
+    </li>
+
+    <li id="comment-126">
+        <img class="avatar" src="Picture/ac928abaa729422494156b32531e309a.gif" alt=""/>        <div class="comment-meta">
+            <span class="comment-author"><a href="https://chanshiyu.com/" rel="external nofollow">蝉時雨</a></span>
+            <time class="comment-time">17.12.19</time>
+            <span class="comment-reply"><a href="https://paugram.com/coding/frontend-tools.html/comment-page-1?replyTo=126#respond-post-76" rel="nofollow" onclick="return TypechoComment.reply('comment-126', 126);">回复</a></span>
+        </div>
+        <div class="comment-content">
+            <p>没为什么没有 Atom</p>        </div>
+        <div class="comment-children">
+            <ol class="comment-list">
+    <li id="comment-128">
+        <img class="avatar" src="Picture/4241ff7d8d0a403287912baacbffaf9c.gif" alt="Paul" width="150" height="150" />        <div class="comment-meta">
+            <span class="comment-author"><a href="https://paugram.com" rel="external nofollow">Paul</a></span>
+            <time class="comment-time">17.12.19</time>
+            <span class="comment-reply"><a href="https://paugram.com/coding/frontend-tools.html/comment-page-1?replyTo=128#respond-post-76" rel="nofollow" onclick="return TypechoComment.reply('comment-128', 128);">回复</a></span>
+        </div>
+        <div class="comment-content">
+            <p>0.0 因为我没用过呀</p>        </div>
+    </li>
+</ol>        </div>
+    </li>
+</ol>        </section>
+    </div>
+</main>
+
+ 
+<footer>
+    <div class="buttons">
+        <a class="to-top" href="#"></a>
+    </div>
+    <div class="wrap min">
+        <section class="widget">
+            <div class="row">
+                <div class="col-m-4">
+                    <h3 class="title-recent">最新文章：</h3>
+                    <ul>
+                        <li><a href="https://paugram.com/tech/protect-linux-ssh.html" target="_blank">给 Linux 的 SSH 做点防护</a></li><li><a href="https://paugram.com/coding/shake-your-text.html" target="_blank">让你的网站文字“抖”起来</a></li><li><a href="https://paugram.com/coding/add-poster-girl-with-plugin.html" target="_blank">给你的博客增加动态看板娘</a></li><li><a href="https://paugram.com/coding/resume-open-sourced.html" target="_blank">个人简介现已开源</a></li><li><a href="https://paugram.com/coding/css-red-packet.html" target="_blank">一个简易的 CSS 红包</a></li><li><a href="https://paugram.com/essay/the-craftsman.html" target="_blank">工匠精神</a></li>                    </ul>
+                </div>
+                <div class="col-m-4">
+                    <h3 class="title-date">时光机：</h3>
+                    <ul>
+                        <li><a href="https://paugram.com/2018/03/" rel="nofollow" target="_blank">2018 年 03 月</a></li><li><a href="https://paugram.com/2018/02/" rel="nofollow" target="_blank">2018 年 02 月</a></li><li><a href="https://paugram.com/2018/01/" rel="nofollow" target="_blank">2018 年 01 月</a></li><li><a href="https://paugram.com/2017/12/" rel="nofollow" target="_blank">2017 年 12 月</a></li><li><a href="https://paugram.com/2017/11/" rel="nofollow" target="_blank">2017 年 11 月</a></li><li><a href="https://paugram.com/2017/10/" rel="nofollow" target="_blank">2017 年 10 月</a></li>                    </ul>
+                </div>
+                <div class="col-m-4">
+                    <h3 class="title-comments">最近评论：</h3>
+                    <ul>
+                                                                            <li>Paul: <a href="https://paugram.com/coding/add-poster-girl-with-plugin.html/comment-page-1#comment-232" rel="nofollow" target="_blank">加我企鹅吧，已...</a></li>
+                                                    <li>hiCasper: <a href="https://paugram.com/coding/add-poster-girl-with-plugin.html/comment-page-1#comment-231" rel="nofollow" target="_blank">网易云现在好像...</a></li>
+                                                    <li>Paul: <a href="https://paugram.com/coding/add-poster-girl-with-plugin.html/comment-page-1#comment-230" rel="nofollow" target="_blank">Good Id...</a></li>
+                                                    <li>Paul: <a href="https://paugram.com/coding/add-poster-girl-with-plugin.html/comment-page-1#comment-229" rel="nofollow" target="_blank">暂时不可以换，...</a></li>
+                                                    <li>hiCasper: <a href="https://paugram.com/coding/add-poster-girl-with-plugin.html/comment-page-1#comment-228" rel="nofollow" target="_blank">大佬可以分享一...</a></li>
+                                                    <li>lucky: <a href="https://paugram.com/coding/add-poster-girl-with-plugin.html/comment-page-1#comment-227" rel="nofollow" target="_blank">怎么给这个人物换装呀</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </section>
+        <section class="sub-footer">
+            <p>© 2018 <a href="https://paugram.com/">保罗的小宇宙</a>. All Rights Reserved. Theme By <a href="https://github.com/Dreamer-Paul/Single" target="_blank" rel="nofollow">Single</a>.</p>
+        </section>
+    </div>
+</footer>
+
+<script src="Scripts/kico.js"></script>
+<script src="Scripts/single.js"></script>
+<script src="Scripts/smooth-scroll.min.js"></script>
+<script>var scroll = new SmoothScroll('.to-top, .article-list a', {offset: 100});</script>
+<canvas id='pio' width='200' height='250'></canvas><script src='Scripts/l2d.js'></script>
+<script>loadlive2d('pio', 'https://api.paugram.com/live/tia/model.json');</script>
+
+</body>
+</html>
